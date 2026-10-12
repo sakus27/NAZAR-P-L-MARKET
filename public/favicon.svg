@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="badgeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3A3B40"/>
+      <stop offset="100%" stop-color="#242528"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer Ring with scalloped / beaded effect matching storefront left sign -->
+  <circle cx="60" cy="60" r="58" fill="url(#badgeGrad)" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="60" cy="60" r="53" fill="none" stroke="#E24A5E" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+
+  <!-- Chicken Silhouette in Center -->
+  <g transform="translate(60, 42) scale(0.9)" text-anchor="middle">
+    <!-- Rooster comb -->
+    <path d="M -4,-13 C -4,-18 0,-20 3,-18 C 6,-20 9,-17 8,-14 Z" fill="#B9253A"/>
+    <!-- Rooster head & beak -->
+    <path d="M 0,-14 C 4,-14 9,-10 9,-6 C 14,-6 15,-2 10,-1 C 12,5 6,10 0,9 C -6,9 -11,5 -10,-1 C -10,-7 -6,-14 0,-14 Z" fill="#FFFFFF"/>
+    <!-- Yellow beak -->
+    <polygon points="9,-6 16,-4 10,-2" fill="#FBBF24"/>
+    <!-- Eye -->
+    <circle cx="4" cy="-7" r="1.5" fill="#242528"/>
+    <!-- Body & wings -->
+    <path d="M -15,0 C -22,-2 -22,12 -14,16 C -6,20 8,18 16,11 C 12,3 2,3 -4,8 C -10,12 -14,8 -15,0 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Brand Text: NAZAR -->
+  <text x="60" y="76" 
+        font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+        font-size="14" 
+        font-weight="900" 
+        letter-spacing="2" 
+        fill="#FFFFFF" 
+        text-anchor="middle">NAZAR</text>
+
+  <!-- Red Accent Ribbon / Bar with PİLİÇ -->
+  <rect x="25" y="81" width="70" height="14" rx="3" fill="#B9253A"/>
+  <text x="60" y="92.5" 
+        font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+        font-size="10.5" 
+        font-weight="900" 
+        letter-spacing="2.5" 
+        fill="#FFFFFF" 
+        text-anchor="middle">PİLİÇ</text>
+
+  <!-- Subtitle: 2005 -->
+  <text x="60" y="106" 
+        font-family="'Inter', 'Segoe UI', Arial, sans-serif" 
+        font-size="7.5" 
+        font-weight="700" 
+        letter-spacing="1.5" 
+        fill="#E6E8EC" 
+        text-anchor="middle">2005'TEN BERİ</text>
+</svg>
