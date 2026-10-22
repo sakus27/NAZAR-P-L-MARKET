@@ -193,7 +193,7 @@ export const PRODUCTS: Product[] = [
     nameTr: "Soslu Pirzola",
     descriptionTr: "Özel sos harcı ile marine edilmiş, mangalda ve fırında yumuşacık pişen piliç pirzola.",
     categoryId: "soslu-marine",
-    images: ["/images/products/soslu-pirzola.webp"],
+    images: ["/images/products/soslu-pirzola.jpg"],
     variants: [
       { id: "v-soslu-pirzola-500g", label: "500 g", price: 122.5, isAvailable: true, priceStatus: "provided" },
       { id: "v-soslu-pirzola-1kg", label: "1 kg", price: 245.0, isAvailable: true, priceStatus: "provided" },
