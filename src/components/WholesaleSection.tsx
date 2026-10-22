@@ -5,14 +5,14 @@ import { STORE_CONFIG } from "@/data/config";
 const WHOLESALE_PRODUCTS = [
   {
     id: "toptan-sis-sawarma",
-    title: "Şiş Şawarma",
-    subtitle: "Döner / Şawarma Şişi",
+    title: "Tavuk Döner Şişi",
+    subtitle: "Marine Edilmiş Piliç Şişi",
     description:
-      "Özenle marine edilmiş, dilimlenip şişe dizilmiş taze piliç şawarma şişi. Şawarma ve döner işletmeleri için hazır, tutarlı lezzet.",
+      "Özenle marine edilmiş, dilimlenip şişe dizilmiş taze piliç döneri. Döner işletmeleri için hazır, tutarlı lezzet.",
     image: "/images/products/toptan-sis-sawarma.jpg",
-    tag: "Şawarma Dükkanları İçin",
+    tag: "Döner Dükkanları İçin",
     features: ["Hazır marine edilmiş", "Düzenli ve istikrarlı kalite", "Toplu sipariş"],
-    message: "Merhaba, şawarma şişi için toptan sipariş vermek istiyorum.",
+    message: "Merhaba, Tavuk Döner Şişi için toptan sipariş vermek istiyorum.",
   },
   {
     id: "toptan-tantuni",
@@ -43,10 +43,10 @@ export default function WholesaleSection() {
             Toptan Satış
           </span>
           <h2 id="toptan-baslik" className="mt-4 text-2xl sm:text-4xl font-black leading-tight">
-            Şawarma ve Tantuni İşletmelerine <span className="text-brand-red">Toptan Tedarik</span>
+            Döner ve Tantuni İşletmelerine <span className="text-brand-red">Toptan Tedarik</span>
           </h2>
           <p className="mt-3 text-sm sm:text-base text-white/75 leading-relaxed">
-            Nazar Piliç olarak 2005&apos;ten beri taze piliç tedarik ediyoruz. Şawarma ve tantuni dükkanlarına
+            Nazar Piliç olarak 2005&apos;ten beri taze piliç tedarik ediyoruz. Döner ve tantuni dükkanlarına
             yüksek miktarlarda, düzenli ve güvenilir toptan satış yapıyoruz. Sipariş miktarınıza özel
             teklif için bizimle iletişime geçin.
           </p>
