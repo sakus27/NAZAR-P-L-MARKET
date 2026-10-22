@@ -3,13 +3,13 @@ export const STORE_CONFIG = {
   shortName: "Nazar Piliç",
   established: "2005",
   slogan: "2005'ten Bu Yana Taze Lezzet",
-  whatsappNumber: "905011346339", // Official configured WhatsApp number
+  whatsappNumber: "905310144559", // Official configured WhatsApp number
   address: "Süleymaniye, Altay Cd. No:61, 16400 İnegöl/Bursa",
   neighbourhood: "Süleymaniye Mah.",
   street: "Altay Cd. No:61",
   postalCode: "16400",
   city: "İnegöl / Bursa",
-  phone: "0501 134 63 39", // WhatsApp / Mobil
+  phone: "0531 014 45 59", // WhatsApp / Mobil
   landlinePhone: "0224 711 26 62", // Dükkan Tel
   landlinePhoneRaw: "02247112662",
   openingHours: "Hergün 08:30 - 21:00",
