@@ -397,8 +397,8 @@ export const PRODUCTS: Product[] = [
     categoryId: "soslu-marine",
     images: ["/images/products/tavuk-sis.webp"],
     variants: [
-      { id: "v-tavuk-sis-500g", label: "500 g", price: 130.0, isAvailable: true, priceStatus: "estimated" },
-      { id: "v-tavuk-sis-1kg", label: "1 kg", price: 260.0, isAvailable: true, priceStatus: "estimated" },
+      { id: "v-tavuk-sis-500g", label: "500 g", price: 175.0, isAvailable: true, priceStatus: "provided" },
+      { id: "v-tavuk-sis-1kg", label: "1 kg", price: 350.0, isAvailable: true, priceStatus: "provided" },
     ],
     isActive: true,
     isFeatured: true,
@@ -413,8 +413,7 @@ export const PRODUCTS: Product[] = [
     categoryId: "beyaz-et",
     images: ["/images/products/baby-sis.webp"],
     variants: [
-      { id: "v-baby-sis-500g", label: "500 g", price: 135.0, isAvailable: true, priceStatus: "estimated" },
-      { id: "v-baby-sis-1kg", label: "1 kg", price: 270.0, isAvailable: true, priceStatus: "estimated" },
+      { id: "v-baby-sis-paket", label: "1 Paket", price: 150.0, isAvailable: true, priceStatus: "provided" },
     ],
     isActive: true,
     isFeatured: false,
