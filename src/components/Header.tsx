@@ -6,6 +6,7 @@ import { Search, Menu, X, ChevronDown, ShoppingBag, Sparkles, MapPin, Phone } fr
 import { STORE_CONFIG, CATEGORIES } from "@/data/config";
 import CartBadge from "./CartBadge";
 import Logo from "./Logo";
+import { ACTIVE_PRODUCT_COUNT } from "@/data/products";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -71,7 +72,7 @@ export default function Header() {
                     onClick={() => setProductsDropdownOpen(false)}
                     className="text-xs font-bold text-brand-red hover:underline flex items-center gap-1"
                   >
-                    <span>Tüm Ürünler (22)</span>
+                    <span>Tüm Ürünler ({ACTIVE_PRODUCT_COUNT})</span>
                   </Link>
                 </div>
 
@@ -179,7 +180,7 @@ export default function Header() {
                     className="flex items-center justify-between px-3 py-2 text-sm font-bold text-brand-red hover:bg-white rounded-xl transition-colors"
                   >
                     <span>Tüm Ürünler</span>
-                    <span className="text-xs bg-red-100 text-brand-red px-2 py-0.5 rounded-full">22 Çeşit</span>
+                    <span className="text-xs bg-red-100 text-brand-red px-2 py-0.5 rounded-full">{ACTIVE_PRODUCT_COUNT} Çeşit</span>
                   </Link>
                   {CATEGORIES.map((cat) => (
                     <Link

@@ -58,17 +58,17 @@ export const PRODUCTS: Product[] = [
     isFeatured: false,
     sortOrder: 2,
   },
-  // 3. Bonfile Tantuni (250 TL/kg)
+  // 3. Bonfile Jülyan (250 TL/kg)
   {
-    id: "p-bonfile-tantuni",
-    slug: "bonfile-tantuni",
-    nameTr: "Bonfile Tantuni",
-    descriptionTr: "Tantuni, sac tava ve hızlı pişirmeye uygun yaprak inceliğinde özel doğranmış taze bonfile eti.",
+    id: "p-bonfile-julyan",
+    slug: "bonfile-julyan",
+    nameTr: "Bonfile Jülyan",
+    descriptionTr: "Jülyen, sac tava, fajita ve hızlı sotelemeye uygun şerit halinde ince doğranmış taze bonfile eti.",
     categoryId: "beyaz-et",
-    images: ["/images/products/bonfile-tantuni.webp"],
+    images: ["/images/products/bonfile-julyan.webp"],
     variants: [
-      { id: "v-bonfile-tantuni-500g", label: "500 g", price: 125.0, isAvailable: true, priceStatus: "provided" },
-      { id: "v-bonfile-tantuni-1kg", label: "1 kg", price: 250.0, isAvailable: true, priceStatus: "provided" },
+      { id: "v-bonfile-julyan-500g", label: "500 g", price: 125.0, isAvailable: true, priceStatus: "provided" },
+      { id: "v-bonfile-julyan-1kg", label: "1 kg", price: 250.0, isAvailable: true, priceStatus: "provided" },
     ],
     isActive: true,
     isFeatured: false,
@@ -193,7 +193,7 @@ export const PRODUCTS: Product[] = [
     nameTr: "Soslu Pirzola",
     descriptionTr: "Özel sos harcı ile marine edilmiş, mangalda ve fırında yumuşacık pişen piliç pirzola.",
     categoryId: "soslu-marine",
-    images: ["/images/products/soslu-pirzola.jpg"],
+    images: ["/images/products/soslu-pirzola.webp"],
     variants: [
       { id: "v-soslu-pirzola-500g", label: "500 g", price: 122.5, isAvailable: true, priceStatus: "provided" },
       { id: "v-soslu-pirzola-1kg", label: "1 kg", price: 245.0, isAvailable: true, priceStatus: "provided" },
@@ -315,7 +315,7 @@ export const PRODUCTS: Product[] = [
     nameTr: "Sırt Çorbalık",
     descriptionTr: "Şifalı, kıvamlı ve lezzetli tavuk suyu çorbalar için taze piliç sırt kemik parçaları.",
     categoryId: "corbalik",
-    images: ["/images/products/sirt-corbalik.webp"],
+    images: ["/images/products/sirt-corbalik-v2.webp"],
     variants: [
       { id: "v-sirt-corbalik-500g", label: "500 g", price: 55.0, isAvailable: true, priceStatus: "provided" },
       { id: "v-sirt-corbalik-1kg", label: "1 kg", price: 110.0, isAvailable: true, priceStatus: "provided" },
@@ -363,7 +363,7 @@ export const PRODUCTS: Product[] = [
     nameTr: "Dilim Sucuk (Tavuk)",
     descriptionTr: "Kahvaltılık ve tostluk olarak pratik şekilde dilimlenmiş, özel baharat çeşnili tavuk sucuğu.",
     categoryId: "sut-sarkuteri",
-    images: ["/images/products/dilim-tavuk-sucuk.webp"],
+    images: ["/images/products/dilim-tavuk-sucuk-v2.webp"],
     variants: [
       { id: "v-dilim-sucuk-500g", label: "500 g", price: 175.0, isAvailable: true, priceStatus: "provided" },
       { id: "v-dilim-sucuk-1kg", label: "1 kg", price: 350.0, isAvailable: true, priceStatus: "provided" },
@@ -379,7 +379,7 @@ export const PRODUCTS: Product[] = [
     nameTr: "Tavuk Sucuk",
     descriptionTr: "Geleneksel kangal formunda, zengin baharat harcıyla olgunlaştırılmış nefis tavuk sucuğu.",
     categoryId: "sut-sarkuteri",
-    images: ["/images/products/tavuk-sucuk.webp"],
+    images: ["/images/products/tavuk-sucuk-v2.webp"],
     variants: [
       { id: "v-tavuk-sucuk-500g", label: "500 g", price: 175.0, isAvailable: true, priceStatus: "provided" },
       { id: "v-tavuk-sucuk-1kg", label: "1 kg", price: 350.0, isAvailable: true, priceStatus: "provided" },
@@ -388,7 +388,73 @@ export const PRODUCTS: Product[] = [
     isFeatured: false,
     sortOrder: 22,
   },
+  // 23. Tavuk Şiş
+  {
+    id: "p-tavuk-sis",
+    slug: "tavuk-sis",
+    nameTr: "Tavuk Şiş",
+    descriptionTr: "Özel baharatlı sosla marine edilmiş, ızgara ve mangala hazır taze piliç but şiş.",
+    categoryId: "soslu-marine",
+    images: ["/images/products/tavuk-sis.webp"],
+    variants: [
+      { id: "v-tavuk-sis-500g", label: "500 g", price: 130.0, isAvailable: true, priceStatus: "estimated" },
+      { id: "v-tavuk-sis-1kg", label: "1 kg", price: 260.0, isAvailable: true, priceStatus: "estimated" },
+    ],
+    isActive: true,
+    isFeatured: true,
+    sortOrder: 23,
+  },
+  // 24. Baby Şiş
+  {
+    id: "p-baby-sis",
+    slug: "baby-sis",
+    nameTr: "Baby Şiş",
+    descriptionTr: "Özel çıtır harçla kaplanmış, tavada veya fırında pratik pişen nefis taze baby tavuk şiş.",
+    categoryId: "beyaz-et",
+    images: ["/images/products/baby-sis.webp"],
+    variants: [
+      { id: "v-baby-sis-500g", label: "500 g", price: 135.0, isAvailable: true, priceStatus: "estimated" },
+      { id: "v-baby-sis-1kg", label: "1 kg", price: 270.0, isAvailable: true, priceStatus: "estimated" },
+    ],
+    isActive: true,
+    isFeatured: false,
+    sortOrder: 24,
+  },
+  // 25. Tavuk Göğüs Kemikli
+  {
+    id: "p-gogus-kemikli",
+    slug: "tavuk-gogus-kemikli",
+    nameTr: "Tavuk Göğüs Kemikli",
+    descriptionTr: "Kemikli ve derili bütün piliç göğüs. Fırın, haşlama ve çorba için ideal.",
+    categoryId: "beyaz-et",
+    images: ["/images/products/gogus-kemikli.webp"],
+    variants: [
+      { id: "v-gogus-kemikli-500g", label: "500 g", price: 90.0, isAvailable: true, priceStatus: "estimated" },
+      { id: "v-gogus-kemikli-1kg", label: "1 kg", price: 180.0, isAvailable: true, priceStatus: "estimated" },
+    ],
+    isActive: true,
+    isFeatured: false,
+    sortOrder: 25,
+  },
+  // 26. Tantuni
+  {
+    id: "p-tantuni",
+    slug: "tantuni",
+    nameTr: "Tantuni",
+    descriptionTr: "Tantuni ve sac tava için küçük küp küp doğranmış taze piliç eti.",
+    categoryId: "beyaz-et",
+    images: ["/images/products/tantuni.webp"],
+    variants: [
+      { id: "v-tantuni-500g", label: "500 g", price: 125.0, isAvailable: true, priceStatus: "estimated" },
+      { id: "v-tantuni-1kg", label: "1 kg", price: 250.0, isAvailable: true, priceStatus: "estimated" },
+    ],
+    isActive: true,
+    isFeatured: false,
+    sortOrder: 26,
+  },
 ];
+
+export const ACTIVE_PRODUCT_COUNT = PRODUCTS.filter((p) => p.isActive).length;
 
 export async function getActiveProducts(): Promise<Product[]> {
   return PRODUCTS.filter((p) => p.isActive).sort((a, b) => a.sortOrder - b.sortOrder);

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { STORE_CONFIG, CATEGORIES } from "@/data/config";
 import { MapPin, Phone, Clock, MessageCircle, Navigation, ExternalLink } from "lucide-react";
 import Logo from "./Logo";
+import { ACTIVE_PRODUCT_COUNT } from "@/data/products";
 
 export default function Footer() {
   return (
@@ -39,7 +40,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <Link href="/katalog" className="text-sm text-brand-border/80 hover:text-white transition-colors">
-                  Tüm Ürünler (22 Çeşit)
+                  Tüm Ürünler ({ACTIVE_PRODUCT_COUNT} Çeşit)
                 </Link>
               </li>
               {CATEGORIES.map((cat) => (

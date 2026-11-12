@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ChevronRight, Sparkles, Award, ShieldCheck, Flame, Clock } from "lucide-react";
-import { getFeaturedProducts, getActiveProducts } from "@/data/products";
+import { getFeaturedProducts, getActiveProducts, ACTIVE_PRODUCT_COUNT } from "@/data/products";
 import { CATEGORIES, STORE_CONFIG } from "@/data/config";
 import ProductCard from "@/components/ProductCard";
 
@@ -76,7 +76,7 @@ export default async function Home() {
               href="/katalog" 
               className="text-xs font-bold text-brand-charcoal hover:text-brand-red flex items-center gap-1 group shrink-0"
             >
-              <span className="hidden sm:inline">Tüm 22 Ürünü Listele</span>
+              <span className="hidden sm:inline">Tüm {ACTIVE_PRODUCT_COUNT} Ürünü Listele</span>
               <span className="sm:hidden text-brand-red font-extrabold">Tümünü Gör</span>
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-brand-red" />
             </Link>
@@ -179,14 +179,14 @@ export default async function Home() {
                     <span className="text-brand-red">Keşfedin</span>
                   </h3>
                   <p className="text-[10px] sm:text-xs text-brand-offwhite/80 leading-relaxed mt-1 sm:mt-2.5 line-clamp-2 sm:line-clamp-none">
-                    Taze piliçten köy sütüne 22 çeşit ürünümüzü inceleyin.
+                    Taze piliçten köy sütüne {ACTIVE_PRODUCT_COUNT} çeşit ürünümüzü inceleyin.
                   </p>
                 </div>
               </div>
 
               <div className="pt-2.5 sm:pt-6 border-t border-white/10 flex items-center justify-between mt-2 sm:mt-0">
                 <div>
-                  <span className="text-lg sm:text-3xl font-black text-white block leading-none">22</span>
+                  <span className="text-lg sm:text-3xl font-black text-white block leading-none">{ACTIVE_PRODUCT_COUNT}</span>
                   <span className="text-[9px] sm:text-[11px] text-white/60 font-semibold uppercase tracking-wider">
                     Çeşit Ürün
                   </span>
@@ -203,7 +203,7 @@ export default async function Home() {
               href="/katalog" 
               className="inline-flex items-center justify-center w-full py-3 bg-brand-charcoal text-white rounded-xl font-bold text-sm hover:bg-brand-red transition-colors shadow-sm"
             >
-              <span>Tüm 22 Ürünü Gör</span>
+              <span>Tüm {ACTIVE_PRODUCT_COUNT} Ürünü Gör</span>
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>
